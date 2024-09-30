@@ -1,0 +1,762 @@
+    1  ls
+    2  conda activate spp
+    3  conda
+    4  conda init
+    5  source .zshrc
+    6  conda activate spp
+    7  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k\n
+    8  pwd
+    9  source .zshrc
+   10  source ~/.zshrc\n
+   11  p10k configure
+   12  source ~/.zshrc
+   13  p10k configure
+   14  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+   15  sed -i 's/ZSH_THEME=".*"/ZSH_THEME="powerlevel10k\/powerlevel10k"/' ~/.zshrc
+   16  source ~/.zshrc
+   17  conda actavate spp
+   18  source .bashrc
+   19  conda activate spp
+   20  git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions\n
+   21  git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting\n
+   22  source .zshrc
+   23  ls
+   24  source .zshrc
+   25  git clone https://gitee.com/dawnwords/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+   26  git clone https://gitee.com/lhaisu/zsh-autosuggestions.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+   27  source .zshrc
+   28  source ~./zshrc
+   29  source .zshrc
+   30  echo "source ${(q-)PWD}/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh" >> ${ZDOTDIR:-$HOME}/.zshrc
+   31  source .zshrc
+   32  watch -n 1 nvidia-smi
+   33  conda activate spp
+   34  git diff
+   35  git add.
+   36  git add .
+   37  git config --global --add safe.directory /mnt/sda2/code/Co-DETR\n
+   38  git add .
+   39  git diff
+   40  git clone git@github.com:XueFengLH/DeepLearning-500-questions.git
+   41  git clone git@github.com:LidhCS/d2l-zh.git
+   42  git pull
+   43  ls
+   44  sudo mount -t nfs 192.168.50.222:/home/leon/mount_point_two/rubby-data-track/nfs_label_work ~/nfs_client
+   45  conda create --name d2l python=3.9 -y
+   46  pip config set global.index-url  https://pypi.tuna.tsinghua.edu.cn/simple/
+   47  pip config get global.index-url
+   48  conda activate d2l\n
+   49  pip install torch==1.12.0\npip install torchvision==0.13.0
+   50  mkdir d2l-zh && cd d2l-zh\ncurl https://zh-v2.d2l.ai/d2l-zh-2.0.0.zip -o d2l-zh.zip\nunzip d2l-zh.zip && rm d2l-zh.zip\ncd pytorch
+   51  unzip d2l-zh.zip && rm d2l-zh.zip\ncd pytorch
+   52  unzip d2l-zh.zip && rm d2l-zh
+   53  cd ..
+   54  unzip d2l-zh.zip && rm d2l-zh
+   55  cd pytorch
+   56  jupyter notebook
+   57  pip install d2l==0.17.6
+   58  conda activate d2l\n
+   59  jupyter notebook
+   60  watch -n 1 nvidia-smi
+   61  kill -9 1400
+   62  git clone git@github.com:XiandaGuo/OpenStereo.git
+   63  conda create --name stereo python=3.7 -y
+   64  watch -n 1 nvidia-smi
+   65  conda install pytorch==1.9.1 torchvision==0.10.1 torchaudio==0.9.1 cudatoolkit=11.3 -c pytorch -c conda-forge
+   66  pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html\n
+   67  pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+   68  conda activate stereo
+   69  pip install torch==1.9.0+cu111 torchvision==0.10.0+cu111 torchaudio==0.9.0 -f https://download.pytorch.org/whl/torch_stable.html
+   70  pip install torch==1.9.1+cu111 torchvision==0.10.1+cu111 torchaudio==0.9.1 -f https://download.pytorch.org/whl/torch_stable.html\n
+   71  pip install -r requirements.txt
+   72  pip isntall onnx
+   73  pip install onnx
+   74  pip install onnxruntime
+   75  watch -n 1 nvidia-smi
+   76  pip uninstall onnxruntime
+   77  pip install onnxruntime-gpu
+   78  watch -n 1 nvidia-smi
+   79  pip install pandas
+   80  watch -n 1 nvidia-smi
+   81  ls
+   82  rm -rf testk*
+   83  ls
+   84  watch -n 1 nvidia-smi
+   85  rm -rf testk*
+   86  ls
+   87  pip install tensorflow
+   88  git clone git@github.com:XueFengLH/tools.git
+   89  python tools/test_kitti.py 
+   90  watch -n 0.001 nvidia-smi
+   91  python tools/test_kitti.py 
+   92  rm -rf testk*
+   93  ls
+   94  watch -n 0.001 nvidia-smi
+   95  watch -n 0.1 nvidia-smi
+   96  ./Snipaste-2.9-Beta2-x86_64.AppImage
+   97  sudo apt install libopengl0 -y
+   98  ./Snipaste-2.9-Beta2-x86_64.AppImage
+   99  ./Snipaste-2.9.2-Beta-x86_64.AppImage
+  100  strings /usr/lib/x86_64-linux-gnu/libstdc++.so.6 | grep GLIBCXX
+  101  git clone https://github.com/lupoDharkael/flameshot.git
+  102  sudo mkdir build
+  103  cd build
+  104  sudo qmake ../
+  105  apt install g++ build-essential qt5-default qt5-qmake qttools5-dev-tools
+  106  sudo apt install g++ build-essential qt5-default qt5-qmake qttools5-dev-tools
+  107  sudo apt install libqt5dbus5 libqt5network5 libqt5core5a libqt5widgets5 libqt5gui5 libqt5svg5-dev
+  108  sudo apt install git openssl ca-certificates
+  109  sudo qmake ../
+  110  ls
+  111  pwd
+  112  cd ..
+  113  ls
+  114  cd flameshot
+  115  sudo mkdir build
+  116  cd bu
+  117  cd build
+  118  sudo qmake ../
+  119  sudo ./cuda_11.1.0_455.23.05_linux.run
+  120  nvcc
+  121  bash nvcc
+  122  source ~./bashrc
+  123  source ~/.bashrc
+  124  nvcc
+  125  nvcc -V
+  126  sudo rm -rf cuda
+  127  ln -s /usr/local/cuda-11.1 /usr/local/cuda
+  128  sudo ln -s /usr/local/cuda-11.1 /usr/local/cuda
+  129  nvcc -V
+  130  sudo rm -rf cuda
+  131  sudo ln -s /usr/local/cuda-11.2 /usr/local/cuda
+  132  nvcc -V
+  133  tensorboard /mnt/sda2/code/OpenStereo/output/KittiDataset/LightStereo1/lightstereo_s_kitti/default/tensorboard/events.out.tfevents.1722829805.spring.25328.0
+  134  tensorboard --logdir=/mnt/sda2/code/OpenStereo/output/KittiDataset/LightStereo1/lightstereo_s_kitti/default/tensorboard/events.out.tfevents.1722829805.spring.25328.0\n
+  135  tensorboard --logdir=/mnt/sda2/code/OpenStereo/output/KittiDataset/LightStereo2/lightstereo_s_kitti/default/tensorboard/events.out.tfevents.1722852796.spring.12926.0\n
+  136  conda activate spp\n
+  137  tensorboard --logdir=/mnt/sda2/code/OpenStereo/output/KittiDataset/LightStereo2/lightstereo_s_kitti/default/tensorboard/events.out.tfevents.1722852796.spring.12926.0\n
+  138  which python
+  139  conda create --name tb python=3.7 -y
+  140  conda activate tb
+  141  conda create --name tb python=3.7
+  142  conda activate sp
+  143  conda info --envs
+  144  split -1000 all.txt
+  145  conda activate vmamba
+  146  pip install tensorboard
+  147  python
+  148  pip install tensorboard
+  149  tensorboard --logdir=/mnt/sda2/code/OpenStereo/output/KittiDataset/LightStereo2/lightstereo_s_kitti/default/tensorboard/events.out.tfevents.1722852796.spring.12926.0\n
+  150  tensorboard --logdir=/mnt/sda2/code/OpenStereo/output/KittiDataset/LightStereo2/lightstereo_s_kitti/default/tensorboard\n
+  151  conda activate vmamba
+  152  tensorboard --logdir=/mnt/sda2/code/OpenStereo/output/KittiDataset/LightStereo2/lightstereo_s_kitti/default/tensorboard\n
+  153  tensorboard --logdir=/mnt/sda2/code/OpenStereo/output/KittiDataset/LightStereo1/lightstereo_s_kitti/default/tensorboard\n
+  154  tensorboard --logdir=/mnt/sda2/code/OpenStereo/output/KittiDataset/LightStereo2/lightstereo_s_kitti/default/tensorboard\n
+  155  conda activate stereo\n
+  156  tensorboard --logdir=/mnt/sda2/code/OpenStereo/output/KittiDataset/LightStereo2/lightstereo_s_kitti/default/tensorboard\n
+  157  df -h
+  158  sudo mv clion-2024.1.4 /opt/
+  159  sudo mv Clion-2024.1.4 /opt/
+  160  sudo mv CLion-2024.1.4 /opt/
+  161  rm ~/clion 
+  162  echo "alias clion=/opt/clion-2024.1.4/bin/clion.sh" >> ~/.bashrc
+  163  clion
+  164  echo "alias clion=/opt/CLion-2024.1.4/bin/clion.sh" >> ~/.bashrc
+  165  clion
+  166  source ~/.bashrc
+  167  clion
+  168  cat ~/.bashrc
+  169  /opt/CLion-2024.1.4/bin/clion.sh
+  170  /opt/CLion-2024.1.4/bin/
+  171  cd /apt
+  172  cd /opt
+  173  ls
+  174  cd CLion-2024.1.4
+  175  ls
+  176  cd bin
+  177  ls
+  178  cd clion-2024.1.4
+  179  ls
+  180  cd bin
+  181  pwd
+  182  source ~/.bashrc
+  183  clion
+  184  find 数据 -type f -name "*.xml" -exec grep -lE "dirtyliquid|solid" {} + > img_path.txt
+  185  sudo gedit clion.desktop\n
+  186  ssh root@192.168.50.198:/root/liang/tcl_pedestrian
+  187  ssh root@192.168.50.19:/root/liang_workspace/tcl_analysis/demo
+  188  ssh fa@192.168.50.19:/root/liang_workspace/tcl_analysis/demo
+  189  ssh root@192.168.50.19:/root/liang_workspace/tcl_analysis/demo
+  190  ssh root@192.168.50.198:/root/liang/tcl_pedestrian
+  191  sudo ssh root@192.168.50.198:/root/liang/tcl_pedestrian
+  192  sudo ssh root@192.168.50.198
+  193  ping 192.168.50.198 
+  194  sudo ssh root@192.168.50.198
+  195  ssh root@192.168.50.19
+  196  ll
+  197  cat ../../movenet_run/run_0.9.0_batch_test.sh
+  198  ssh root@192.168.50.198
+  199  ssh root@192.168.50.19
+  200  mkdir c
+  201  scp -r root@192.168.50.19:/root/liang_workspace/tcl_analysis/demo ~/c
+  202  sudo apt-get update\nsudo apt-get install build-essential cmake git libgtk2.0-dev pkg-config libavcodec-dev libavformat-dev libswscale-dev\n
+  203  ll
+  204  ./person_attentive
+  205  sudo apt-get install libopencv-dev\n
+  206  clion
+  207  clion.sh
+  208  ./clion.sh
+  209  gcc --version
+  210  sudo apt-get update\nsudo apt-get install gcc-8 g++-8
+  211  gcc --version
+  212  gcc-8 --version
+  213  sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-7 10 --slave /usr/bin/g++ g++ /usr/bin/g++-7\nsudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-8 20 --slave /usr/bin/g++ g++ /usr/bin/g++-8
+  214  sudo update-alternatives --config gcc
+  215  gcc --version
+  216  ./clion.sh
+  217  sudo yum install -y  vulkan-devel
+  218  sudo apt install -y  vulkan-devel
+  219  sudo apt-get install -y  vulkan-devel
+  220  sudo apt update\nsudo apt install vulkan-sdk
+  221  wget -qO - http://packages.lunarg.com/lunarg-signing-key-pub.asc | sudo apt-key add -\nsudo wget -qO /etc/apt/sources.list.d/lunarg-vulkan-focal.list http://packages.lunarg.com/vulkan/lunarg-vulkan-focal.list\nsudo apt update\nsudo apt install vulkan-sdk
+  222  tar -xf vulkansdk-linux-x86_64-1.3.224.1.tar.gz -C vulkan_1.3.224\ncd vulkan_1.3.224\n
+  223  tar -xf vulkansdk-linux-x86_64-1.3.224.1.tar.gz -C vulkan_1.3.224\n\n
+  224  mkdir vulkan_1.3.224
+  225  tar -xf vulkansdk-linux-x86_64-1.3.224.1.tar.gz -C vulkan_1.3.224\n\n
+  226  cd vulkan_1.3.224
+  227  tree
+  228  ll
+  229  setup-env.sh
+  230  ./setup-env.sh
+  231  sudo ./setup-env.sh
+  232  ARCH="$(uname -m)"\nVULKAN_SDK="$(dirname "$(readlink -f "${BASH_SOURCE:-$_}" )" )/$ARCH"\nexport VULKAN_SDK\nPATH="$VULKAN_SDK/bin:$PATH"\nexport PATH\nLD_LIBRARY_PATH="$VULKAN_SDK/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"\nexport LD_LIBRARY_PATH\nVK_ADD_LAYER_PATH="$VULKAN_SDK/etc/vulkan/explicit_layer.d${VK_ADD_LAYER_PATH:+:$VK_ADD_LAYER_PATH}"\nexport VK_ADD_LAYER_PATH\nif [ -n "$VK_LAYER_PATH" ]; then\n    echo "Unsetting VK_LAYER_PATH environment variable for SDK usage"\n    unset VK_LAYER_PATH\nfi
+  233  clion
+  234  source ~/.bashrc
+  235  clion
+  236  gedit ~/.zshrc
+  237  source ~/.zshrc
+  238  clion
+  239  source ~/.zshrc
+  240  clion
+  241  ssh root@192.168.50.198
+  242  scp -r root@192.168.50.19:/root/liang/movenet_run/run_0.9.0_batch_test.sh ~/c
+  243  scp -r root@192.168.50.198:/root/liang/movenet_run/run_0.9.0_batch_test.sh ~/c
+  244  pwd
+  245  sync
+  246  watch -n 0.1 nvidia-smi
+  247  df -h
+  248  sync
+  249  find /mnt/sda2/0808 -type f |grep jpg |grep cam0|sort > all.txt 
+  250  while IFS= read -r line; do cp -r --parents "$line" /mnt/sda2/0808/img_0808; done < /mnt/sda2/0808/all.txt
+  251  find /mnt/sda2/0808 -type f |grep jpg |grep cam0|grep -v ORIGIN|sort > all.txt 
+  252  while IFS= read -r line; do cp -r --parents "$line" /mnt/sda2/0808/img_0808; done < /mnt/sda2/0808/all.txt
+  253  cd img
+  254  ls
+  255  scp -r root@192.168.50.198:/root/liang/tcl_pedestrian/*.txt ./
+  256  scp -r root@192.168.50.198:/root/liang/tcl_pedestrian/cmd.txt ./
+  257  scp -r root@192.168.50.198:/root/liang/tcl_pedestrian/ ./
+  258  ls
+  259  watch -n 0.1 nvidia-smi
+  260  pwd
+  261  cd /
+  262  ls
+  263  cd ~
+  264  ls
+  265  df -h
+  266  sudo mount -t nfs 192.168.50.222:/home/leon/mount_point_two/rubby-data-track/nfs_label_work ~/nfs_client
+  267  conda info --envs
+  268  conda activate labelimg
+  269  python labelImg.py
+  270  ssh root@192.168.50.198
+  271  scp -r root@192.168.50.198:/root/liang/movenet_run/run_0.9.0_batch_test.sh ~/c
+  272  ./run_0.9.0_batch_test.sh
+  273  find pwd -type f
+  274  find all -type f
+  275  find all -type d
+  276  find /home/spring/下载/all -type d
+  277  pwd
+  278  find /mnt/sda2/0808_cam0 -type d
+  279  find /mnt/sda3/0808_cam0 -type d
+  280  find /mnt/sda3/0808_cam0 -type d|grep img|\n
+  281  find /mnt/sda3/0808_cam0 -type d|grep img\n
+  282  find /mnt/sda3/0808_cam0 -type d|grep /img\n
+  283  find /mnt/sda3/0808_cam0 -type d|grep img\n
+  284  find /mnt/sda3/0808_cam0 -type d|grep /img\n
+  285  ./run_0.9.0_batch_test.sh
+  286  ./run_batch_test.sh
+  287  ./run_batch_test.sh /mnt/sda3/0808_cam0
+  288  ./run_batch_test.sh
+  289  conda create --name pulc python=3.7
+  290  conda activate pulc\n
+  291  python3 -m pip install paddlepaddle-gpu -i https://mirror.baidu.com/pypi/simple
+  292  ls
+  293  df -h
+  294  python -m pip install paddlepaddle-gpu==2.6.1.post112 -f https://www.paddlepaddle.org.cn/whl/linux/mkl/avx/stable.html
+  295  conda create --name pulc python=3.9
+  296  python -m pip install paddlepaddle-gpu==2.6.1.post112 -f https://www.paddlepaddle.org.cn/whl/linux/mkl/avx/stable.html
+  297  pip3 install paddleclas
+  298  cd /mnt/sda2/dataset/person
+  299  paddleclas --model_name=person_attribute --infer_imgs=pulc_demo_imgs/person_attribute/090004.jpg
+  300  wget https://paddleclas.bj.bcebos.com/data/PULC/pa100k.tar
+  301  git clone git@github.com:PaddlePaddle/PaddleClas.git
+  302  tar -xf pa100k.tar
+  303  python3 -m paddle.distributed.launch \\n    --gpus="0,1,2,3" \\n    tools/train.py \\n        -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yamlpython3 -m paddle.distributed.launch \\n    --gpus="0,1,2,3" \\n    tools/train.py \\n        -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1
+  304  python3 -m paddle.distributed.launch \\n    --gpus="0" \\n    tools/train.py \\n        -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml
+  305  watch -n 0.1 nvidia-smi
+  306  python3 -m paddle.distributed.launch \\n    --gpus="0" \\n    tools/train.py \\n        -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml
+  307  export CUDA_VISIBLE_DEVICES=0\npython3 -m paddle.distributed.launch \\n    --gpus="0" \\n    tools/train.py \\n        -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml
+  308  watch -n 0.1 nvidia-smi
+  309  git clone git@github.com:PaddlePaddle/Paddle2ONNX.git
+  310  pip install paddle2onnx
+  311  sync
+  312  sudo ./cuda_11.3.1_465.19.01_linux.run
+  313  nvcc -V
+  314  source ~/.zshrc
+  315  nvcc -V
+  316  source ~/.bashrc
+  317  nvcc -V
+  318  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/output \\n            --model_filename /mnt/sda2/code/PaddleClas/output/best_model.pdopt \\n            --params_filename /mnt/sda2/code/PaddleClas/output/best_model.pdparams \\n            --save_file model.onnx
+  319  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/output \\n            --model_filename /mnt/sda2/code/PaddleClas/output/best_model.pdstates \\n            --params_filename /mnt/sda2/code/PaddleClas/output/best_model.pdparams \\n            --save_file model.onnx
+  320  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/output \\n            --model_filename /mnt/sda2/code/PaddleClas/output/best_model.pdopt \\n            --params_filename /mnt/sda2/code/PaddleClas/output/best_model.pdparams \\n            --save_file model.onnx
+  321  wget https://paddleclas.bj.bcebos.com/models/PULC/person_attribute_infer.tar && tar -xf person_attribute_infer.tar
+  322  cd deploy\nmkdir models && cd models\nwget -nc https://paddle-imagenet-models-name.bj.bcebos.com/dygraph/inference/ResNet50_vd_infer.tar && tar xf ResNet50_vd_infer.tar\ncd ..
+  323  conda activate pulc\n
+  324  paddle2onnx --model_dir=./models/ResNet50_vd_infer/ \\n--model_filename=inference.pdmodel \\n--params_filename=inference.pdiparams \\n--save_file=./models/ResNet50_vd_infer/inference.onnx \\n--opset_version=10 \\n--enable_onnx_checker=True
+  325  conda list
+  326  pip install onnx
+  327  paddle2onnx --model_dir=./models/ResNet50_vd_infer/ \\n--model_filename=inference.pdmodel \\n--params_filename=inference.pdiparams \\n--save_file=./models/ResNet50_vd_infer/inference.onnx \\n--opset_version=10 \\n--enable_onnx_checker=True
+  328  paddle2onnx --model_dir=/mnt/sda2/code/PaddleClas/output/ \\n--model_filename=/mnt/sda2/code/PaddleClas/output/best_model.pdstates \\n--params_filename=inference.pdiparams \\n--save_file=/mnt/sda2/code/PaddleClas/output/inference.onnx \\n--opset_version=10 \\n--enable_onnx_checker=True\n
+  329  paddle2onnx --model_dir=/mnt/sda2/code/PaddleClas/output/ \\n--model_filename=/mnt/sda2/code/PaddleClas/output/person_attribute_infer/inference.pdiparams.info \\n--params_filename=inference.pdiparams \\n--save_file=/mnt/sda2/code/PaddleClas/output/inference.onnx \\n--opset_version=10 \\n--enable_onnx_checker=True\n
+  330  paddle2onnx --model_dir=/mnt/sda2/code/PaddleClas/output/ \\n--model_filename=/mnt/sda2/code/PaddleClas/output/person_attribute_infer/inference.pdmodel \\n--params_filename=inference.pdiparams \\n--save_file=/mnt/sda2/code/PaddleClas/output/inference.onnx \\n--opset_version=10 \\n--enable_onnx_checker=True
+  331  paddle2onnx --model_dir=/mnt/sda2/code/PaddleClas/output/ \\n--model_filename=./person_attribute_infer/inference.pdmodel \\n--params_filename=./person_attribute_infer/inference.pdiparams \\n--save_file=/mnt/sda2/code/PaddleClas/output/inference.onnx \\n--opset_version=10 \\n--enable_onnx_checker=True
+  332  paddle2onnx --model_dir=/mnt/sda2/code/PaddleClas/output/ \\n--model_filename=./person_attribute_infer/inference.pdmodel \\n--params_filename=./person_attribute_infer/inference.pdiparams \\n--save_file=/mnt/sda2/code/PaddleClas/output/inference.onnx \\n--opset_version=10 \\n--enable_onnx_checker=True\n
+  333  paddle2onnx --model_dir=/mnt/sda2/code/PaddleClas/output/ \\n--model_filename=./person_attribute_infer/inference.pdmodel \\n--params_filename=./person_attribute_infer/inference.pdiparams \\n--save_file=/mnt/sda2/code/PaddleClas/output/1.onnx \\n--opset_version=10 \\n--enable_onnx_checker=True\n
+  334  ssh root@192.168.50.198
+  335  scp -r root@192.168.50.198:/root/liang/tcl_pedestrian/ ./
+  336  pip install xlwt
+  337  sync
+  338  scp -r root@192.168.50.198:/root/liang/tcl_pedestrian/ ./
+  339  clion
+  340  source ~/.zshrc
+  341  clion
+  342  VULKAN_SDK
+  343  cat ~./zshrc
+  344  cat ~/.zshrc
+  345  export VULKAN_SDK=/home/spring/vulkan_1.3.224/1.3.224.1/x86_64\n
+  346  VULKAN_SDK
+  347  python3
+  348  vulkaninfo
+  349  clion
+  350  vulkaninfo
+  351  scp -r root@192.168.50.19:/root/liang_workspace/tcl_analysis/demo ./
+  352  scp -r root@192.168.50.198:/root/liang/tcl_pedestrian/ ./
+  353  export CUDA_VISIBLE_DEVICES=0\npython3 -m paddle.distributed.launch \\n    --gpus="0" \\n    tools/train.py \\n        -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml
+  354  watch -n 0.1 nvidia-smi
+  355  nvcc -V
+  356  export CUDA_VISIBLE_DEVICES=0\npython3 -m paddle.distributed.launch \\n    --gpus="0" \\n    tools/train.py \\n        -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml
+  357  watch -n 0.1 nvidia-smi
+  358  export CUDA_VISIBLE_DEVICES=0\npython3 -m paddle.distributed.launch \\n    --gpus="0" \\n    tools/train.py \\n        -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml
+  359  pwd
+  360  nvcc
+  361  nvcc —V
+  362  nvcc _V
+  363  nvcc -V
+  364  watch -n 0.1 nvidia-smi
+  365  kill -9 8928 
+  366  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml \\n    -o Global.pretrained_model="/home/spring/.paddleclas/inference_model/PULC/person_attribute/inference.pdiparams"
+  367  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml \\n    -o Global.pretrained_model="/home/spring/.paddleclas/weights/PPLCNet_x1_0_ssld_pretrained.pdparams"
+  368  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml \\n    -o Global.pretrained_model="/mnt/sda2/code/PaddleClas/output/best_model/model.pdparams"
+  369  watch -n 0.1 nvidia-smi
+  370  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml \\n    -o Global.pretrained_model="/mnt/sda2/code/PaddleClas/output/best_model/model.pdparams"
+  371  kill -9 10642
+  372  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml \\n    -o Global.pretrained_model="/mnt/sda2/code/PaddleClas/output/best_model/model.pdparams"
+  373  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml \\n    -o Global.pretrained_model="/home/spring/.paddleclas/weights/PPLCNet_x1_0_ssld_pretrained.pdparams"
+  374  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml \\n    -o Global.pretrained_model="/mnt/sda2/code/PaddleClas/output/person_attribute_infer/inference.pdparams"
+  375  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml \\n    -o Global.pretrained_model="/mnt/sda2/code/PaddleClas/output/best_model/model.pdparams"
+  376  watch -n 0.1 nvidia-smi
+  377  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml \\n    -o Global.pretrained_model="/mnt/sda2/code/PaddleClas/output/best_model/model.pdparams"
+  378  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml \\n    -o Global.pretrained_model="/mnt/sda2/code/PaddleClas/tools/output_nvme/best_model/model.pdparams"
+  379  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml \\n    -o Global.pretrained_model="/mnt/sda2/code/PaddleClas/output/best_model/model.pdparams"
+  380  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml \\n    -o Global.pretrained_model="/mnt/sda2/code/PaddleClas/tools/output_nvme/best_model.pdparams"
+  381  export CUDA_VISIBLE_DEVICES=0\npython3 -m paddle.distributed.launch \\n    --gpus="0" \\n    tools/train.py \\n        -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_nvme.yaml
+  382  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0.yaml \\n    -o Global.pretrained_model="/mnt/sda2/code/PaddleClas/tools/output_nvme/best_model.pdparams"
+  383  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_nvme.yaml \\n    -o Global.pretrained_model="/mnt/sda2/code/PaddleClas/tools/output_nvme/last_model.pdparams"
+  384  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_nvme.yaml \\n    -o Global.pretrained_model="/mnt/sda2/code/PaddleClas/tools/output_nvme/latest.pdparams"
+  385  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_nvme.yaml \\n    -o Global.pretrained_model="/mnt/sda2/code/PaddleClas/tools/output_nvme/epoch_14.pdparams"
+  386  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_nvme.yaml \\n    -o Global.pretrained_model="/mnt/sda2/code/PaddleClas/output/person_attribute_infer/inference.pdparams"
+  387  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_nvme.yaml \\n    -o Global.pretrained_model="/mnt/sda2/code/PaddleClas/output/epoch_3.pdparams"
+  388  sudo mount -t nfs 192.168.50.222:/home/leon/mount_point_two/rubby-data-track/nfs_label_work ~/nfs_client
+  389  ls
+  390  rm -rf *.txt
+  391  ls
+  392  watch -n 0.1 nvidia-smi
+  393  pip install sklearn
+  394  pip install opencv-python
+  395  git clone git@github.com:XueFengLH/PaddleClas.git
+  396  git clone git@github.com:XueFengLH/PaddleClas1.git
+  397  watch -n 0.1 nvidia-smi
+  398  git clone https://github.com/XueFengLH/PaddleClas1.git
+  399  cd Paddle1
+  400  cd PaddleClas1
+  401  ls
+  402  cd ..
+  403  cd PaddleClas
+  404  ls
+  405  git pull
+  406  \tgit config --global --add safe.directory /mnt/sda2/code/PaddleClas1
+  407  git pull
+  408  git push
+  409  git clone git@github.com:XueFengLH/PaddleClas1.git
+  410  git push
+  411  git add .
+  412  git config --global --add safe.directory /mnt/sda2/code/PaddleClas
+  413  git add .
+  414  git commit -m "test eval"
+  415  git push
+  416  git status
+  417  git branch -M main\ngit remote add origin git@github.com:XueFengLH/PaddleClas.git\ngit push -u origin main
+  418  git remote add origin git@github.com:XueFengLH/PaddleClas.git
+  419  git push -u origin main
+  420  git clone git@github.com:XueFengLH/PaddleClas1.git
+  421  pip install opencv-python
+  422  cd PaddleClas
+  423  cd ..
+  424  cd PaddleClas1
+  425  ls
+  426  git push
+  427  ls
+  428  git pull
+  429  git add .
+  430  git commit -m "test eval"
+  431  git push
+  432  pip install sklearn
+  433  conda acitvate tools
+  434  conda activate tools
+  435  pip install sklearn
+  436  conda info --envs
+  437  pip install xlwt
+  438  pip install sklearn
+  439  git push
+  440  sh tools/dist_train.sh projects/configs/co_deformable_detr/co_deformable_detr_r50_1x_coco.py 8 path_to_exp
+  441  conda create --name Co-DETR python=3.7.11
+  442  cd /
+  443  ls
+  444  cd usr
+  445  ls
+  446  cd local
+  447  ls
+  448  rm -rf cuda
+  449  sudo rm -rf cuda
+  450  ln -s /usr/local/cuda-11.3 /usr/local/cuda
+  451  sudo ln -s /usr/local/cuda-11.3 /usr/local/cuda
+  452  nvcc -V
+  453  sudo cp -r /mnt/sda2/tools/cuda/cudnn-11.2-linux-x64-v8.1.0.77/cuda/include /usr/local/cuda-11.3
+  454  sudo cp -r /mnt/sda2/tools/cuda/cudnn-11.2-linux-x64-v8.1.0.77/cuda/include /usr/local/cuda-11.3/include
+  455  sudo cp -r /mnt/sda2/tools/cuda/cudnn-11.2-linux-x64-v8.1.0.77/cuda/lib64 /usr/local/cuda-11.3/lib64
+  456  cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2\ncat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+  457  ll
+  458  cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2\ncat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+  459  sudo cp -r /mnt/sda2/tools/cuda/cudnn-11.2-linux-x64-v8.1.0.77/cuda/lib64 /usr/local/cuda-11.3/
+  460  sudo cp -r /mnt/sda2/tools/cuda/cudnn-11.2-linux-x64-v8.1.0.77/cuda/lib64 /usr/local/cuda/
+  461  sudo cp -r /mnt/sda2/tools/cuda/cudnn-11.2-linux-x64-v8.1.0.77/cuda/lib64 /usr/local/cuda-11.3
+  462  sudo cp -r /mnt/sda2/tools/cuda/cudnn-11.2-linux-x64-v8.1.0.77/cuda/include/cudnn*.h /usr/local/cuda-11.3/include
+  463  sudo cp -r /mnt/sda2/tools/cuda/cudnn-11.2-linux-x64-v8.1.0.77/cuda/lib64/libcudnn*  /usr/local/cuda-11.3/lib64
+  464  nvcc -V
+  465  cat /usr/local/cuda/include/cudnn.h | grep CUDNN_MAJOR -A 2\ncat /usr/local/cuda/include/cudnn_version.h | grep CUDNN_MAJOR -A 2
+  466  history
+  467  conda activate Co-DETR
+  468  conda info --envs
+  469  conda create --name Co-DETR python=3.7.11  
+  470  watch -n 0.1 nvidia-smi
+  471  conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch\n
+  472  conda create --name Co-DETR python=3.7.11  
+  473  conda create --name Co-DETR python=3.7
+  474  watch -n 0.1 nvidia-smi
+  475  conda activate Co-DETR\n#\n# To deactivate an active environment, use\n#\n#     $ conda deactivate\n\n\n ~         
+  476  conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch\n
+  477  pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
+  478  pip install /home/spring/下载/torch-1.11.0+cu113-cp37-cp37m-linux_x86_64 (1).whl
+  479  pip install /home/spring/下载/torch-1.11.0+cu113-cp37-cp37m-linux_x86_64 .whl
+  480  /home/spring/下载
+  481  pip install torch-1.11.0+cu113-cp37-cp37m-linux_x86_64\ .whl
+  482  pip install torch-1.11.0+cu113-cp37-cp37m-linux_x86_64 .whl
+  483  pip install torch-1.11.0+cu113-cp37-cp37m-linux_x86_64.whl
+  484  pip install torch==1.11.0+cu113 torchvision==0.12.0+cu113 torchaudio==0.11.0 --extra-index-url https://download.pytorch.org/whl/cu113
+  485  pip install mmcv-full=={mmcv_version} -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.11.0/index.html
+  486  pip install mmcv-full==1.5.0 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.11.0/index.html
+  487  cd mmdetection
+  488  ls
+  489  pip install -v -e . -r requirements/tracking.txt
+  490  conda activate Co-DETR\n#\n# To deactivate an active environment, use\n#\n#     $ conda deactivate\n\n\n ~         
+  491  pip install -v -e . -r requirements/tracking.txt
+  492  pwd
+  493  /mnt/sda2/code/Co-DETR
+  494  ls
+  495  cd mmdetection
+  496  pip install -v -e . -r requirements/tracking.txt
+  497  cd ..
+  498  pip install -r requirements.txt
+  499  pip install fairscale
+  500  pip install timm
+  501  /usr/bin/env bash /mnt/sda2/code/Co-DETR/mmdetection/tools/dist_train.sh
+  502  pip install yapf==0.30.0
+  503  find . -type f -name "*.jpg" | wc -l
+  504  ssh root@192.168.50.198
+  505  clion
+  506  watch -n 0.1 nvidia-smi
+  507  find . -type f -name "*.jpg" | wc -l
+  508  watch -n 0.1 nvidia-smi
+  509  find . -type f -name "*.jpg" | wc -l
+  510  watch -n 0.1 nvidia-smi
+  511  find . -type f -name "*.jpg" | wc -l
+  512  sudo apt-get update\nsudo apt-get install mplayer
+  513  mplayer VID_20240814_101234.mp4
+  514  mplayer 
+  515  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_rubby.yaml \\n    -o Global.pretrained_model="/mnt/sda2/code/PaddleClas/tools/output_nvme_0813_train/best_model"
+  516  python3 tools/eval.py \\n    -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_rubby.yaml \\n    -o Global.pretrained_model="/mnt/sda2/code/PaddleClas/tools/output_rubby/best_model"\n
+  517  find . -type f -name "*.jpg" | wc -l
+  518  pwd
+  519  pip list
+  520  pip install opencv-python==4.5.1.48
+  521  pip list
+  522  pip install opencv-python==4.2.0.32\n
+  523  df -h
+  524  sync
+  525  df -h
+  526  ls
+  527  du -h 8.12数据25174.zip
+  528  paddle2onnx --model_dir=/mnt/sda2/code/PaddleCl\n--model_filename=./person_attribute_infer/inference.pdmodel \\n--params_filename=./person_attribute_infer/inference.pdiparams \\n--save_file=/mnt/sda2/code/PaddleClas/output/1.onnx \\n--opset_version=10 \\n--enable_onnx_checker=True\n
+  529  paddle2onnx --model_dir=/mnt/sda2/code/PaddleClas/output/ \\n--model_filename=./person_attribute_infer/inference.pdmodel \\n--params_filename=./person_attribute_infer/inference.pdiparams \\n--save_file=/mnt/sda2/code/PaddleClas/output/1.onnx \\n--opset_version=10 \\n--enable_onnx_checker=True\n
+  530  df -h
+  531  sync
+  532  paddle2onnx --model_dir=/mnt/sda2/code/PaddleClas/output/ \\n--model_filename=/mnt/sda2/code/PaddleClas/tools/output_rubby/best_model/model.pdparams \\n--params_filename=./person_attribute_infer/inference.pdiparams \\n--save_file=/mnt/sda2/code/PaddleClas/output/1.onnx \\n--opset_version=10 \\n--enable_onnx_checker=True\n
+  533  paddle2onnx --model_dir=/mnt/sda2/code/PaddleClas/output/ \\n--model_filename=/mnt/sda2/code/PaddleClas/tools/output_rubby/best_model/model.pdparams \\n--params_filename=./person_attribute_infer/inference.pdiparams \\n--save_file=/mnt/sda2/code/PaddleClas/output/rubby.onnx \\n--opset_version=10 \\n--enable_onnx_checker=True\n
+  534  paddle2onnx --model_dir=/mnt/sda2/code/PaddleClas/output/ \\n--model_filename=./person_attribute_infer/inference.pdmodel \\n--params_filename=/mnt/sda2/code/PaddleClas/tools/output_rubby/best_model/model.pdparams \\n--save_file=/mnt/sda2/code/PaddleClas/output/0815.onnx \\n--opset_version=10 \\n--enable_onnx_checker=True\n
+  535  paddle2onnx --model_dir=/mnt/sda2/code/PaddleClas/tools/output_rubby \\n--model_filename=./person_attribute_infer/inference.pdmodel \\n--params_filename=/mnt/sda2/code/PaddleClas/tools/output_rubby/best_model/model.pdparams \\n--save_file=/mnt/sda2/code/PaddleClas/output/0815.onnx \\n--opset_version=10 \\n--enable_onnx_checker=True\n
+  536  find . -type f -name "*.jpg" | wc -l
+  537  find . -type f -name "*.jpg" ||grep cam0|grep -v ORIGIN|wc -l
+  538  find . -type f -name "*.jpg" |grep cam0|grep -v ORIGIN|wc -l
+  539  ssh root@192.168.50.198
+  540  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/tools/output_rubby/best_model \\n            --model_filename /mnt/sda2/code/PaddleClas/tools/output_rubby/best_model/inference.pdmodel \\n            --params_filename /mnt/sda2/code/PaddleClas/tools/output_rubby/best_model/model.pdiparams \\n            --save_file /mnt/sda2/code/PaddleClas/tools/output_rubby/best_model/rubby.onnx
+  541  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/tools/output_rubby/best_model \\n            --model_filename /mnt/sda2/code/PaddleClas/tools/output_rubby/best_model/inference.pdmodel \\n            --params_filename /mnt/sda2/code/PaddleClas/tools/output_rubby/best_model/model.pdparams \\n            --save_file /mnt/sda2/code/PaddleClas/tools/output_rubby/best_model/rubby.onnx
+  542  find . -type f -name "*.jpg" | wc -l
+  543  cd ..
+  544  cd person
+  545  find . -type f -name "*.jpg" | wc -l
+  546  watch -n 0.1 nvidia-smi
+  547  conda info --envs
+  548  conda acivate labeling
+  549  conda activate lableing
+  550  conda activate labeling
+  551  conda info --envs
+  552  conda activate labelimg
+  553  python labelImg.py
+  554  sudo apt-get update\nsudo apt-get install --reinstall ca-certificates
+  555  python3 -m paddle.distributed.launch \\n    --gpus="0" \\n    tools/train.py \\n        -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_rubby.yaml
+  556  watch -n 0.1 nvidia-smi
+  557  python3 -m paddle.distributed.launch \\n    --gpus="0" \\n    tools/train.py \\n        -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_rubby.yaml
+  558  mitmdump -s intercept.py --listen-port 8080
+  559  openssl s_client -connect blog.csdn.net:443 -CAfile ~/.mitmproxy/mitmproxy-ca-cert.pem\n
+  560  wget -P ./ch_lite/ https://paddleocr.bj.bcebos.com/dygraph_v2.0/ch/ch_ppocr_mobile_v2.0_det_train.tar && tar xf ./ch_lite/ch_ppocr_mobile_v2.0_det_train.tar -C ./ch_lite/
+  561  python3 tools/export_model.py -c /mnt/sda2/code/PaddleClas/ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_rubby.yaml -o Global.pretrained_model=/mnt/sda2/code/PaddleClas/tools/output_rubby_0815/best_model Global.save_inference_dir=./inference/det_db/
+  562  python tools/export_model.py \\n    -c /mnt/sda2/code/PaddleClas/ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_rubby.yaml \\n    -o Global.pretrained_model=/mnt/sda2/code/PaddleClas/tools/output_rubby_0815/best_model \\n    -o Global.save_inference_dir=./deploy/models/rubby
+  563  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/deploy/models/rubby \\n            --model_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby/inference.pdmodel \\n            --params_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby/inference.pdiparams \\n            --save_file /mnt/sda2/code/PaddleClas/tools/output_rubby/best_model/rubby.onnx
+  564  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/deploy/models/rubby \\n            --model_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby/inference.pdmodel \\n            --params_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby/inference.pdiparams \\n            --save_file /mnt/sda2/code/PaddleClas/deploy/models/rubby/rubby.onnx
+  565  python python/predict_cls.py \\n-c configs/inference_cls.yaml \\n-o Global.use_onnx=True \\n-o Global.use_gpu=False \\n-o Global.inference_model_dir=/mnt/sda2/code/PaddleClas/deploy/models/rubby
+  566  cd deploy
+  567  python python/predict_cls.py \\n-c configs/inference_cls.yaml \\n-o Global.use_onnx=True \\n-o Global.use_gpu=False \\n-o Global.inference_model_dir=/mnt/sda2/code/PaddleClas/deploy/models/rubby
+  568  pip install onnxruntime-gpu
+  569  ll
+  570  watch -n 0.1 nvidia-smi
+  571  sudo mount -t nfs 192.168.50.222:/home/leon/mount_point_two/rubby-data-track/nfs_label_work ~/nfs_client
+  572  watch -n 0.1 nvidia-smi
+  573  sudo mount -t nfs 192.168.50.222:/home/leon/mount_point_two/rubby-data-track/nfs_label_work ~/nfs_client
+  574  ls
+  575  watch -n 0.1 nvidia-smi
+  576  top
+  577  kill -9 30070
+  578  watch -n 0.1 nvidia-smi
+  579  cd data/coco/annotations
+  580  ls
+  581  git add .
+  582  git commit -m "test2"
+  583  rm -rf 0819
+  584  df -h
+  585  sync
+  586  df -h
+  587  rm -rf model
+  588  df -h
+  589  rm -rf 0815
+  590  rm -rf 0813
+  591  rm -rf 20240521_shining
+  592  df -h
+  593  sync
+  594  df -h
+  595  sudo mount -t nfs 192.168.50.222:/home/leon/mount_point_two/rubby-data-track/nfs_label_work ~/nfs_client
+  596  ll
+  597  for dir in */; do\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  598  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  599  ssh root@192.168.50.198
+  600  df -h
+  601  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  602  pip install tqdm
+  603  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  604  pip install tqdm
+  605  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  606  wc -l
+  607  watch -n 0.1 nvidia-smi
+  608  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  609  conda activate labelimg
+  610  cd labelImg
+  611  ls
+  612  python labelImg.py
+  613  df -h
+  614  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  615  df -h
+  616  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  617  df -h
+  618  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  619  ls
+  620  pwd
+  621  cd tools
+  622  sl
+  623  ls
+  624  cd output_0819_train
+  625  mkdir model
+  626  mv *.pdopt *.pdparams *.pdstates ./model
+  627  ls
+  628  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  629  conda activate labelimg
+  630  python labelImg.py
+  631  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  632  find . -type f -name "*.xml" | > all.txt
+  633  while IFS= read -r line; do rm -rf "$line" ; done < /home/spring/mnt/sda3/ksn/20240306/all.txt
+  634  while IFS= read -r line; do rm -rf "$line" ; done < ./all.txt
+  635  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  636  watch -n 0.1 nvidia-smi
+  637  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  638  conda activate labelimg
+  639  python labelImg.py
+  640  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  641  find . -type f -name "*.xml" | > all.txt
+  642  while IFS= read -r line; do rm -rf "$line" ; done < ./all.txt
+  643  df -h
+  644  find . -type f -name "*.jpg" | wc -l
+  645  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  646  while IFS= read -r line; do rm -rf "$line" ; done < ./all.txt
+  647  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  648  watch -n 0.1 nvidia-smi
+  649  cd deploy
+  650  python tools/export_model.py \\n    -c /mnt/sda2/code/PaddleClas/ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_rubby.yaml \\n    -o Global.pretrained_model=/mnt/sda2/code/PaddleClas/tools/output_0819_20_clean_all/best_model \\n    -o Global.save_inference_dir=./deploy/models/rubby_0819_20_clean_all
+  651  cd ..
+  652  python tools/export_model.py \\n    -c /mnt/sda2/code/PaddleClas/ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_rubby.yaml \\n    -o Global.pretrained_model=/mnt/sda2/code/PaddleClas/tools/output_0819_20_clean_all/best_model \\n    -o Global.save_inference_dir=./deploy/models/rubby_0819_20_clean_all
+  653  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all \\n            --model_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdmodel \\n            --params_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdiparams \\n            --save_file /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/rubby_0819_20_clean_all.onnx
+  654  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  655  sudo mount -t nfs 192.168.50.222:/home/leon/mount_point_two/rubby-data-track/nfs_label_work ~/nfs_client
+  656  ssh root@192.168.50.198
+  657  clion
+  658  ls
+  659  ./person_attentive
+  660  pipinstall onnx onnxconverter-common
+  661  pip install onnx onnxconverter-common
+  662  watch -n 0.1 nvidia-smi
+  663  python deploy/slim/quant_post_static.py -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_rubby.yaml -o Global.save_inference_dir=./deploy/models/quant_0819_20_clean_all
+  664  pip isntall paddleslim
+  665  pip install paddleslim
+  666  python deploy/slim/quant_post_static.py -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_rubby.yaml -o Global.save_inference_dir=./deploy/models/quant_0819_20_clean_all
+  667  pip install seqeval ==1.2.1 
+  668  pip install seqeval==1.2.1 
+  669  pip install seqeval
+  670  python deploy/slim/quant_post_static.py -c ./ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_rubby.yaml -o Global.save_inference_dir=./deploy/models/quant_0819_20_clean_all
+  671  python tools/train.py -c ppcls/configs/slim/PPLCNet_x1_0_quantization.yaml -o Global.device=gpu
+  672  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  673  watch -n 0.1 nvidia-smi
+  674  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  675  python tools/train.py -c ppcls/configs/slim/PPLCNet_x1_0_quantization.yaml -o Global.device=gpu
+  676  watch -n 0.1 nvidia-smi
+  677  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all \\n            --model_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdmodel \\n            --params_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdiparams \\n            --save_file /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/rubby_0819_20_clean_all.onnx
+  678  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all \\n            --model_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdmodel \\n            --params_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdiparams \\n            --save_file /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/rubby_0819_20_clean_all_11.onnx \\n\t    --opset_version 11
+  679  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all \\n            --model_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdmodel \\n            --params_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdiparams \\n            --save_file /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/rubby_0819_20_clean_all_fp16.onnx \\n\t    --export_fp16_model True
+  680  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  681  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all \\n            --model_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdmodel \\n            --params_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdiparams \\n            --save_file /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/rubby_0819_20_clean_all_fp16.onnx \\n\t    --export_fp16_model True
+  682  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  683  git clone https://github.com/PaddlePaddle/Paddle-Lite.git
+  684  cd Paddle-Lite
+  685  # 如果使用编译方式，建议使用develop分支编译预测库
+  686  git checkout develop
+  687  ./lite/tools/build_android.sh  --arch=armv8  --with_cv=ON --with_extra=ON
+  688  cd ..
+  689  rm -rf Paddle-Lite
+  690  rm -rf ./Paddle-Lite
+  691  rm -rf ./Paddle-Lite/
+  692  rm -rf ./Paddle-Lite/.git/objects/pack
+  693  git clone https://github.com/PaddlePaddle/Paddle-Lite.git
+  694  clion
+  695  ./lite/tools/build_android.sh  --arch=armv8  --with_cv=ON --with_extra=ON
+  696  scp -r root@192.168.50.198:/root/liang/tcl_pedestrian/ ./
+  697  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all \\n            --model_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdmodel \\n            --params_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdiparams \\n            --save_file /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/rubby_0819_20_clean_all.onnx
+  698  pip install ppq
+  699  \npip install ninja-build
+  700  \nconda install -c conda-forge ninja
+  701  watch -n 0.1 nvidia-smi
+  702  git clone https://github.com/PaddlePaddle/models.git\n
+  703  \nnetstat -an | grep 15732
+  704  history > h.txt
+  705  pip install paddleslim -i https://pypi.tuna.tsinghua.edu.cn/simple
+  706  python deploy/slim/quant_post_static.py -c /mnt/sda2/code/PaddleClas/ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_rubby.yaml -o Global.save_inference_dir=/mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all
+  707  watch -n 0.1 nvidia-smi
+  708  python deploy/slim/quant_post_static.py -c /mnt/sda2/code/PaddleClas/ppcls/configs/PULC/person_attribute/PPLCNet_x1_0_rubby_quant.yaml -o Global.save_inference_dir=/mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all
+  709  python deploy/slim/quant_post_static.py -c ppcls/configs/ImageNet/ResNet/ResNet50_vd.yaml -o Global.save_inference_dir=./deploy/models/class_ResNet50_vd_ImageNet_infer
+  710  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/quant_post_static_model \\n            --model_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/quant_post_static_model/inference.pdmodel \\n            --params_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/quant_post_static_model/inference.pdiparams \\n            --save_file /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/quant_post_static_model/rubby_0819_20_clean_all_int8.onnx\n
+  711  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/quant_post_static_model \\n            --model_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/quant_post_static_model/model.pdmodel \\n            --params_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/quant_post_static_model/model.pdiparams \\n            --save_file /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/quant_post_static_model/rubby_0819_20_clean_all_int8.onnx
+  712  sudo mount -t nfs 192.168.50.222:/home/leon/mount_point_two/rubby-data-track/nfs_label_work ~/nfs_client
+  713  ssh root@192.168.50.198
+  714  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  715  clion
+  716  scp -r root@192.168.50.19:/root/liang_workspace/tcl_analysis/demo ./
+  717  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  718  ssh root@192.168.50.19
+  719  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  720  du -h ./
+  721  du 
+  722  du -h ./
+  723  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  724  watch -n 0.1 nvidia-smi
+  725  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  726  git add .
+  727  watch -n 0.1 nvidia-smi
+  728  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  729  sudo apt install terminator
+  730  git clone git@github.com:yas-sim/person-detect-reidentification.git
+  731  ls
+  732  conda create --name person_detect python=3.7
+  733  watch -n 0.1 nvidia-smi
+  734  conda info --envs
+  735  watch -n 0.1 nvidia-smi
+  736  conda info --envs
+  737  conda activate person_detect
+  738  pip install openvino-dev
+  739  git clone git@github.com:XueFengLH/person-detect-reidentification.git
+  740  conda activate person_detect
+  741  python3 $INTEL_OPENVINO_DIR/deployment_tools/tools/model_downloader/downloader.py --list models.lst
+  742  git clone git@github.com:openvinotoolkit/open_model_zoo.git
+  743  python ./open_model_zoo-master/tools/model_tools/downloader.py --list models.lst
+  744  watch -n 0.1 nvidia-smi
+  745  pip install -r requirements.txt
+  746  pip install natsort
+  747  watch -n 0.1 nvidia-smi
+  748  sudo apt install VLC
+  749  sudo cp /etc/apt/sources.list /etc/apt/sources.list.bak
+  750  ls
+  751  sudo gedit /etc/apt/sources.list
+  752  source /etc/apt/sources.list
+  753  wc -l
+  754  for dir in */; do\\n  echo "$dir: $(find "$dir" -type f | wc -l)"\ndone
+  755  sudo mount -t nfs 192.168.50.222:/home/leon/mount_point_d/test-result-moved ~/nfs_1
+  756  \nsudo apt update
+  757  sudo apt install vlc
+  758  git add
+  759  git add .
+  760  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all \\n            --model_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdmodel \\n            --params_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdiparams \\n            --save_file /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/rubby_0819_20_clean_all.onnx
+  761  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all \\n            --model_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdmodel \\n            --params_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdiparams \\n            --save_file /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/rubby_0819_20_clean_all(onnx10).onnx \\n            --opset_version 10\n
+  762  paddle2onnx --model_dir /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all \\n            --model_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdmodel \\n            --params_filename /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/inference.pdiparams \\n            --save_file /mnt/sda2/code/PaddleClas/deploy/models/rubby_0819_20_clean_all/rubby_0819_20_clean_all10.onnx \\n            --opset_version 10\n
