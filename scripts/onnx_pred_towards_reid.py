@@ -2,96 +2,22 @@ import os
 import onnxruntime
 import numpy as np
 import cv2
-from tqdm import tqdm
+import shutil
 import math
-"""
-onnx_path:onnx路径
-dataset_path:测试集的路径
-save_path:图片结果保存路径
-save_img_res:是否保存图片结果
-thr:置信度阈值
-"""
-# onnx_path = "/mnt/sda2/code/tools/onnx/person_attentive_122.onnx"
-# dataset_path = '/home/spring/dataset/person_0906_test_near'
-# save_path = '/mnt/sda3/persson_test_onnx'
-onnx_path = ''
-dataset_path = ''
-save_path = ''
-save_img_res = True
-thr = 0
-save_path = os.path.join(save_path, dataset_path.split('/')[-1] + '_' + os.path.split(onnx_path)[-1].replace('.onnx','') + '_thr_' + str(thr))
-session = onnxruntime.InferenceSession(onnx_path)
-
-class_names = ['front', 'side','back']
-# 准备输入数据，这里需要根据你的模型来准备
-
-def save_res(image,id,label,save_path,res,thr,all_res_path):
-    # 获取置信度
-    # res = np.round(res, decimals=2)
-    conf_z = 'z:' + str(res[0])
-    conf_c = 'c:' + str(res[1])
-    conf_b = 'b:' + str(res[2])
-    # image hwc
-
-    if id == 0:
-        id = "Z"
-        if res[0]  < thr:
-            return False
-    elif id == 1:
-        id = "C"
-        if res[1] < thr:
-            return False
-    elif id == 2:
-        id = "B"
-        if res[2] < thr:
-            return False
-    if label == 0:
-        label = "Z"
-    elif label == 1:
-        label = "C"
-    elif label == 2:
-        label = "B"
-    if id != label:
-        font_color = (0, 64, 215)
-        root,name = os.path.split(save_path)
-        os.makedirs(os.path.join(root,"bad"), exist_ok=True)
-        save_path = os.path.join(root,"bad",name)
-    elif id == label:
-        font_color = (170, 178, 32)
-        root,name = os.path.split(save_path)
-        os.makedirs(os.path.join(root,"good"), exist_ok=True)
-        save_path = os.path.join(root,"good",name)
-    id = id
-    height, width, _ = image.shape
-    center_x = width // 2
-    center_y = height // 2# 添加序号
-    font = cv2.FONT_HERSHEY_SIMPLEX
-    font_scale = 2
-
-    thickness = 8
-    image = (image - image.min()) / (image.max() - image.min())
-    image = (image * 255).astype("uint8")
-    image = np.ascontiguousarray(image)
 
 
-    cv2.putText(image, id, (center_x, center_y), font, font_scale, font_color, thickness, cv2.LINE_AA)# 显示或保存图像
-    cv2.putText(image, conf_z, (10, 20), font, 0.5, font_color, 1, cv2.LINE_AA)
-    cv2.putText(image, conf_c, (10, 35), font, 0.5, font_color, 1, cv2.LINE_AA)
-    cv2.putText(image, conf_b, (10, 50), font, 0.5, font_color, 1, cv2.LINE_AA)
-    # cv2.imshow('Image', image)
-    cv2.waitKey(0)
-    cv2.destroyAllWindows()
-    # os.makedirs(all_res_path, exist_ok=True)
-    if save_img_res:
-        cv2.imwrite(all_res_path, image)
-        cv2.imwrite(save_path, image)
+def infer_similar_between_two_rois():
+    
     return True
+
+
 def num(num):
     if 'e-0' in num:
         a,b = num.split('e-0')
         a1,a2 = a.split('.')
         num = '0.' + '0' * (int(b) - 1) + a1 + a2
     return num
+
 def transform_image(image):
     mean = [0.485, 0.456, 0.406]
     std = [0.229, 0.224, 0.225]
@@ -102,93 +28,102 @@ def transform_image(image):
     image = (image - mean) / std
     image = np.transpose(image, (2, 0, 1))
     return image
-def softmax(x) -> int:
-  if x.ndim == 2:
-    x = x-x.max(axis=1, keepdims=True)
-    x = np.exp(x)
-    x /= x.sum(axis=1, keepdims=True)
-  elif x.ndim == 1:
-    x = x-np.max(x)
-    x = np.exp(x) / np.sum(np.exp(x))
-  return x
-# 创建会话并加载ONNX模型
 
-tp = 0
-fp = 0
-save_txt = False
-np.set_printoptions(suppress=True)
-recall = []
-for root, dirs, files in os.walk(dataset_path):
-    good = 0
-    bad = 0
-    for file in tqdm(files):
 
-        lines = []
-        if not file.endswith(".jpg"):
-            continue
-        # print(os.path.join(root, file))
-        input_data = cv2.imread(os.path.join(root, file))
-        input_data = np.transpose(input_data, (2, 0, 1))
-        input_data = transform_image(input_data)
-        input_data = np.expand_dims(input_data, axis=0)
-        input_data = input_data.astype(np.float32)
-        # 运行模型进行推理
-        output = session.run([], {"x": input_data})
-        for r in output[0][0]:
-            # r = np.around(r, decimals=7)
-            # r = math.ldexp(r, 0)
-            r = str(r)
-            r = num(r)
-            lines.append(r)
+#单张图片的推理朝向
+def infer_roi_towards(input_data, session):
+    res = 0
+    input_data = np.transpose(input_data, (2, 0, 1))
+    input_data = transform_image(input_data)
+    input_data = np.expand_dims(input_data, axis=0)
+    input_data = input_data.astype(np.float32)
+    # 运行模型进行推理
+    output = session.run([], {"x": input_data})
+    # 输出结果
+    res = output[0][:,-3:][0]
+    return res
 
-        # 输出结果
-        res = output[0][:,-3:][0]
-        # print(os.path.join(root, file))
-        pred = class_names[np.argmax(res)]
-        save_img = True
-        if "front" in root:
-            label = 0
-        elif "side" in root:
-            label = 1
-        elif "back" in root:
-            label = 2
-        if save_img:
-            img_save = input_data.reshape(3, 256, 192)
-            # 更改通道顺序从 (channels, height, width) 到 (height, width, channels)
-            img_save = img_save.transpose(1, 2, 0)
-            dir_path_img = root.replace(dataset_path, '').replace('img','')
-            img_path = os.path.join(save_path,dir_path_img[1:-1])
-            img_path = os.path.join(img_path,file)
-            all_save_path = os.path.join(save_path,'all')
-            # 是否大于阈值
-            os.makedirs(all_save_path, exist_ok=True)
-            all_save_path = os.path.join(all_save_path,file)
-            save_if = save_res(img_save, np.argmax(res), label, img_path,res,thr,all_save_path)
-            # print(img_path)
-        if save_if:
-            if pred in os.path.join(root, file):
-                tp += 1
-                good += 1
-            else:
-                fp += 1
-                bad += 1
-        if save_txt:
-            with open(os.path.join('./res',file.replace('.jpg', '.txt')), 'w') as file1:
-                for line in lines:
-                    file1.write(line)
-                    file1.write('\n')
-        if file.endswith(".jpg") and file == files[-1]:
-            recall.append('-------------------------------------------------------')
-            recall.append(img_path.split('/')[-2])
-            if good + bad != 0:
-                recall.append(good/(good+bad))
-            else:
-                recall.append("未检出")
-print(tp, fp)
-print(tp/(tp + fp))
-for r in recall:
-    print(r)
-# with open(result_path, 'w') as file:
-#     for line in lines:
-#         file.write(line)
-#         file.write('\n')
+
+if __name__ == '__main__':
+    
+    ONNX_FILE_PATH = "../model-release/2.1/person_attentive.onnx"
+    DATA_SOURCE_PATH_FORMAT = "res/input_imgs"
+
+    #当前源数据集的output目录
+    DATA_SOURCE_BASE_PATH = "/home/leon/mount_point_d/test-result-moved/reid_datas/reid_datas_pick/20241025_tck_datas/output"
+    #指定目录
+    DATA_SOURCE_MID_PATHS = ['20241025_tck_lxy_0'] 
+    #全部子目录 DATA_SOURCE_MID_PATHS = next(os.walk(DATA_SOURCE_BASE_PATH))[1]
+
+    if len(DATA_SOURCE_MID_PATHS) < 1:
+        print("data sub-paths not exists. {}".format(DATA_SOURCE_BASE_PATH))
+        exit(-1)
+
+    #当前朝向分类数据集保存的顶层目录
+    ANNO_DATA_BASE_PATH = "/home/leon/mount_point_d/test-result-moved/peson-attr-train-test-data/datasets/train_iter/person_towards_reid_cap_reuse1112"
+    
+    if not os.path.exists(ANNO_DATA_BASE_PATH):
+        print("save path not exists. {}".format(ANNO_DATA_BASE_PATH))
+        exit(-1)
+    
+    np.set_printoptions(suppress=True)
+    session = onnxruntime.InferenceSession(ONNX_FILE_PATH)
+    print("onnx loaded: {}".format(ONNX_FILE_PATH))
+
+    class_names = ['front', 'side','back']
+    target_classes_path = list()
+    
+    for c in class_names:
+        c_path = os.path.join(ANNO_DATA_BASE_PATH,c)
+        target_classes_path.append(c_path)
+        
+    for c in target_classes_path:
+        if not os.path.exists(c):
+            os.makedirs(c)
+        print("save path prepared. {}".format(c))
+
+    for m in DATA_SOURCE_MID_PATHS:
+        
+        current_directory = os.path.join(DATA_SOURCE_BASE_PATH, m, DATA_SOURCE_PATH_FORMAT)
+        files_and_dirs = os.listdir(current_directory)
+        jpg_files = [f for f in files_and_dirs if f.endswith('.jpg')]
+        cped_number = 0
+        front_counter = 0
+        side_conter = 0
+        back_conter = 0
+        for j in jpg_files:
+            source_path = os.path.join(current_directory, j)
+
+            input_data_src_size = cv2.imread(source_path)
+            width, height = 192, 256
+            resize_dim = (width, height)
+            input_data = cv2.resize(input_data_src_size, resize_dim)
+            cls_index = infer_roi_towards(input_data, session)
+            cls_index = np.argmax(cls_index)
+            
+            pred_cls_path = target_classes_path[cls_index]
+            if cls_index == 0:
+                front_counter = front_counter + 1
+            if cls_index == 1:
+                side_conter = side_conter + 1
+            if cls_index == 2:
+                back_conter = back_conter + 1
+            towards_mid_path = os.path.join(pred_cls_path, m)
+            if not os.path.exists(towards_mid_path):
+                os.makedirs(towards_mid_path)
+            for q_type in ['normal', 'special']:
+                if not os.path.exists(os.path.join(towards_mid_path, q_type)): 
+                    os.makedirs(os.path.join(towards_mid_path, q_type))
+            towards_mid_path = os.path.join(towards_mid_path, 'normal')
+
+            destination_path = os.path.join(towards_mid_path, j)
+            # shutil.copy2(source_path, destination_path)
+            cv2.imwrite(destination_path, input_data)
+            cped_number = cped_number + 1
+        
+        print("processed path {}; {} v.s. {}".format(current_directory, len(jpg_files), cped_number))
+        print("front {} ; side {} ; back {} = {} ".format(front_counter, side_conter, back_conter, (back_conter+side_conter+front_counter)))
+        
+    print("Finished towards classify.")
+
+
